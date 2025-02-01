@@ -3,7 +3,7 @@ import sectionImage from "../../assets/logo/sectionImage.jpg";
 import sectionImage1 from "../../assets/logo/sectionImage1.svg";
 import sectionImage2 from "../../assets/logo/sectionImage2.svg";
 import sectionImage3 from "../../assets/logo/sectionImage3.svg";
-export default function Section() {
+export default function Section({ scrolled }) {
   return (
     <div className="grid grid-cols-12 px-28 py-14">
       <div className="col-span-6">
@@ -41,9 +41,14 @@ export default function Section() {
             className="absolute top-10 w-20 left-10  object-cover animate-sway"
             alt=""
           />
+
           <img
             src={bg2}
-            className="absolute w-[75%] h-[95%] m-auto ml-16 object-cover animate-sway"
+            className={`${
+              scrolled
+                ? "hidden"
+                : "absolute w-[75%] h-[95%] m-auto ml-16 object-cover animate-sway"
+            } `}
             alt=""
           />
         </div>
