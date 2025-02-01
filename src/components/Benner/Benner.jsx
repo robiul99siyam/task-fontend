@@ -3,7 +3,7 @@ export default function Benner() {
   return (
     <div className="grid grid-cols-12">
       <div className="col-span-8  px-28 py-10 text-white">
-        <h1 className="text-[85px] leading-[80px] font-semibold">
+        <h1 className="text-[82px] leading-[80px] font-semibold">
           Embrace the <br /> Future of Finance
         </h1>
         <p className="mt-6 text-lg font-semibold">

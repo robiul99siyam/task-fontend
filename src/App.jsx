@@ -9,6 +9,7 @@ import Section from "./components/Finance Section/Section";
 import Navbar from "./components/Navbar/Navbar";
 import SectionPhilosophy from "./components/PHILOSOPHY/SectionPhilosophy";
 import Technology from "./components/PHILOSOPHY/Technology";
+import Trusted from "./components/Trusted/Trusted";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -71,6 +72,7 @@ export default function App() {
       <Section scrolled={scrolled} />
       <SectionPhilosophy />
       <Technology />
+      <Trusted />
     </>
   );
 }

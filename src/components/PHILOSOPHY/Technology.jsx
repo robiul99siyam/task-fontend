@@ -1,5 +1,5 @@
 import React from "react";
-
+import Slider from "./Slider";
 export default function Technology() {
   return (
     <div className="py-4 px-28">
@@ -9,6 +9,8 @@ export default function Technology() {
       <h1 className="text-[#0B305B]  leading-[70px] font-semibold text-[65px] text-center">
         The future of finance
       </h1>
+
+      <Slider />
     </div>
   );
 }
