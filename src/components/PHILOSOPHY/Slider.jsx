@@ -68,10 +68,10 @@ export default function Slider() {
                       <h2 className="text-[#0B305B] text-2xl   font-semibold lg:text-5xl ">
                         {slider.title}
                       </h2>
-                      <p className="text-[#0B305B] hidden lg:block tracking-normal font-semibold text-lg mt-3">
+                      <p className="text-[#0B305B] hidden lg:block md:block md:text-sm tracking-normal font-semibold text-lg mt-3">
                         {slider.description}
                       </p>
-                      <p className="text-[#0B305B] hidden lg:block mt-3">
+                      <p className="text-[#0B305B] hidden lg:block md:block md:text-sm mt-3">
                         {slider.motive}
                       </p>
                     </div>
@@ -81,15 +81,15 @@ export default function Slider() {
                   <div className="md:block mx-2">
                     <img
                       src={slider.images}
-                      className=" mx-auto w-full  h-48 mt-4 lg:mt-0 lg:h-96 object-cover rounded-lg"
+                      className=" mx-auto w-full  h-48 mt-4 md:h-80 lg:mt-0 lg:h-96 object-cover rounded-lg"
                       loading="lazy"
                       alt="slider"
                     />
 
-                    <p className="text-[#0B305B] lg:text-lg text-sm sm:block lg:hidden tracking-normal font-semibold mt-3">
+                    <p className="text-[#0B305B] lg:text-lg text-sm sm:block md:hidden lg:hidden tracking-normal font-semibold mt-3">
                       {slider.description}
                     </p>
-                    <p className="text-[#0B305B] lg:text-base text-sm sm:block lg:hidden mt-3">
+                    <p className="text-[#0B305B] md:hidden lg:text-base text-sm sm:block lg:hidden mt-3">
                       {slider.motive}
                     </p>
                   </div>

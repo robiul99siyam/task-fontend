@@ -16,7 +16,7 @@ export default function SectionPhilosophy() {
         <img className="sm:block lg:hidden" src={artificalSM} alt="" />
       </div>
 
-      <div className="flex flex-col justify-center md:flex-row items-center gap-14 md:gap-32 px-[10px]">
+      <div className="flex flex-col justify-center md:flex-col items-center lg:flex-row gap-14 md:gap-5 px-[10px]">
         {philosophy.map((philo) => (
           <div key={philo.id}>
             <img src={philo.image} alt="" />

@@ -11,9 +11,9 @@ export default function Navbar({ scrolled }) {
 
   return (
     <nav
-      className={`px-6 md:px-28 transition-all duration-300 ${
+      className={`px-6 md:px-5 transition-all duration-300 md:py-4 ${
         scrolled
-          ? "bg-white shadow-lg fixed w-full z-50 text-gray-900 py-4 md:py-6"
+          ? "bg-white shadow-lg fixed w-full z-50 text-gray-900 py-4 "
           : "bg-transparent py-4"
       }`}
     >
@@ -47,7 +47,7 @@ export default function Navbar({ scrolled }) {
             </li>
             <li>
               <a
-                className={`px-2 py-2 border-b-2 border-transparent ${
+                className={`px-2 py-2 border-b-2 border-transparent  ${
                   scrolled
                     ? "text-blue-500 hover:border-blue-500"
                     : "hover:border-gray-50"
@@ -75,7 +75,7 @@ export default function Navbar({ scrolled }) {
 
         {/* Contact Us Button */}
         <button
-          className={`hidden md:flex items-center gap-2 px-6 md:px-8 py-2 md:py-3 border border-gray-50 rounded-md text-white font-bold text-base md:text-lg ${
+          className={`hidden md:flex items-center gap-2 px-6 md:px-2 py-2 md:py-2 border border-gray-50 rounded-md text-white font-bold text-base md:text-lg ${
             scrolled
               ? "bg-[#FE8B53] hover:bg-[#E76F2F] shadow-xl"
               : "hover:bg-white hover:text-[#0C69D5]"
@@ -87,7 +87,7 @@ export default function Navbar({ scrolled }) {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden absolute top-14 left-0 w-full  bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] shadow-md py-4">
+        <div className="md:hidden absolute top-14 left-0 w-full bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] shadow-md py-4">
           <ul className="flex flex-col items-center space-y-4 text-gray-900 font-semibold">
             <li>
               <DrapDownSolution scrolled={true} />
