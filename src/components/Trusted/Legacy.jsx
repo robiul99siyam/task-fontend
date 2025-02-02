@@ -13,7 +13,7 @@ export default function Legacy() {
         margin: "0px",
         boxSizing: "border-box",
       }}
-      className="relative w-full border-style h-[calc(70vh-80px)] lg:h-[calc(90vh-80px)] bg-cover bg-center bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] overflow-hidden"
+      className="relative w-full border-style h-[calc(75vh-80px)] lg:h-[calc(90vh-80px)] bg-cover bg-center bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
         <img
@@ -51,7 +51,7 @@ export default function Legacy() {
           Talk to us to find out how we can transform your organisation for the
           future Contact Us
         </p>
-        <button className="lg:w-1/2 mt-5 py-4 my-36 w-full lg:mt-5  lg:py-4 font-bold bg-[#FE8B53] hover:bg-[#E76F2F] text-white rounded-md shadow-lg ">
+        <button className="px-10 lg:px-36  mt-5 py-4 my-36 lg:mt-5  lg:py-4 font-bold bg-[#FE8B53] hover:bg-[#E76F2F] text-white rounded-md shadow-lg ">
           Contact Us
         </button>
       </div>

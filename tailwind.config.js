@@ -16,6 +16,12 @@ export default {
         custom: "polygon(0 1%, 100% 0, 100% 86%, 0% 100%);)",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
   },
   plugins: [],
 };

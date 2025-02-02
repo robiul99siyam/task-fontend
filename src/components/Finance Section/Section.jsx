@@ -31,12 +31,12 @@ export default function Section() {
         <div className="absolute inset-0 z-10 mt-20 lg:mt-0">
           <img
             src={sectionImage1}
-            className="absolute w-28 top:40 left-64 lg:top-10  lg:w-28 lg:left-96  object-cover animate-swayY"
+            className="absolute w-16 top:40 left-60 lg:top-10  lg:w-28 lg:left-96  object-cover animate-swayY"
             alt=""
           />
           <img
             src={sectionImage2}
-            className="absolute top-32 left-28 w-16 lg:top-40  lg:left-48  object-cover animate-swayY"
+            className="absolute top-32 left-28 sm:left-20 w-16 lg:top-40  lg:left-48  object-cover animate-swayY"
             alt=""
           />
           <img
@@ -55,7 +55,7 @@ export default function Section() {
         <div className="relative z-0">
           <img
             src={sectionImage}
-            className="mt-10 lg:mt-1 w-[70%]  lg:w-[75%] lg:h-[65%] m-auto"
+            className="mt-10 lg:mt-1 w-[70%] sm:w-[65%] lg:w-[75%] lg:h-[65%] m-auto"
             alt=""
           />
         </div>

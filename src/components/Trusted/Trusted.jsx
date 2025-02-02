@@ -46,7 +46,7 @@ export default function Trusted() {
 
       <div className="flex justify-center border-b items-center lg:gap-36 gap-5 flex-col lg:flex-row">
         {/* Years of Experience */}
-        <div className="flex flex-row lg:flex-col   justify-center items-center gap-10 lg:gap-5">
+        <div className="flex flex-row lg:flex-col   justify-center items-center gap-8 lg:gap-5">
           <p className="flex justify-center items-center font-bold text-7xl lg:text-8xl text-[#1573DF]">
             <FaGreaterThan className="text-7xl mt-2 font-extrabold text-[#1573DF]" />
             {years}
@@ -57,7 +57,7 @@ export default function Trusted() {
         </div>
 
         {/* Financial Institutions */}
-        <div className="flex flex-row lg:flex-col   justify-center items-center gap-10 lg:gap-5">
+        <div className="flex flex-row lg:flex-col   justify-center items-center gap-8 lg:gap-5">
           <p className="flex justify-center items-center font-bold text-7xl lg:text-8xl text-[#1573DF]">
             {institutions}+
           </p>
@@ -67,8 +67,8 @@ export default function Trusted() {
         </div>
 
         {/* Customers Each */}
-        <div className="flex flex-row lg:flex-col justify-center items-center gap-10 lg:gap-5">
-          <p className="flex justify-center items-center font-bold text-6xl lg:text-8xl text-[#1573DF]">
+        <div className="flex flex-row lg:flex-col justify-center items-center gap-8 lg:gap-5">
+          <p className="flex justify-center items-center font-bold text-5xl lg:text-8xl text-[#1573DF]">
             <FaGreaterThan className="text-7xl mt-2 font-extrabold text-[#1573DF]" />
             {customers}m
           </p>
