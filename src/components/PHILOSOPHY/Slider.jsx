@@ -28,19 +28,21 @@ export default function Slider() {
   }, [setSliderId]);
   return (
     <>
-      <div className="flex justify-center items-center gap-36 py-8">
-        {SliderContent.map((slider) => (
-          <button
-            className={`${
-              slider.id === sliderId
-                ? "bg-[#B9D9FF] text-[#1F80F0] px-8 py-2 font-bold rounded-full"
-                : "text-[#1F80F0] tracking-widest font-bold"
-            }`}
-            key={slider.id}
-          >
-            {slider.tags}
-          </button>
-        ))}
+      <div className="hidden lg:block">
+        <div className="flex justify-center  items-center gap-36 py-8">
+          {SliderContent.map((slider) => (
+            <button
+              className={`${
+                slider.id === sliderId
+                  ? "bg-[#B9D9FF]  text-[#1F80F0] px-8 py-2 font-bold rounded-full"
+                  : "text-[#1F80F0] tracking-widest font-bold"
+              }`}
+              key={slider.id}
+            >
+              {slider.tags}
+            </button>
+          ))}
+        </div>
       </div>
       <div
         ref={ref}
@@ -63,24 +65,33 @@ export default function Slider() {
                       <p className="text-[#1F80F0] mb-2 tracking-widest font-bold">
                         {slider.tags.toUpperCase()}
                       </p>
-                      <h2 className="text-[#0B305B]   font-semibold text-5xl ">
+                      <h2 className="text-[#0B305B] text-2xl   font-semibold lg:text-5xl ">
                         {slider.title}
                       </h2>
-                      <p className="text-[#0B305B] tracking-normal font-semibold text-lg mt-3">
+                      <p className="text-[#0B305B] hidden lg:block tracking-normal font-semibold text-lg mt-3">
                         {slider.description}
                       </p>
-                      <p className="text-[#0B305B] mt-3">{slider.motive}</p>
+                      <p className="text-[#0B305B] hidden lg:block mt-3">
+                        {slider.motive}
+                      </p>
                     </div>
                   </div>
 
                   {/* Image Section */}
-                  <div className="hidden md:block">
+                  <div className="md:block mx-2">
                     <img
                       src={slider.images}
-                      className="w-full h-96 object-cover rounded-lg"
+                      className=" mx-auto w-full  h-48 mt-4 lg:mt-0 lg:h-96 object-cover rounded-lg"
                       loading="lazy"
                       alt="slider"
                     />
+
+                    <p className="text-[#0B305B] lg:text-lg text-sm sm:block lg:hidden tracking-normal font-semibold mt-3">
+                      {slider.description}
+                    </p>
+                    <p className="text-[#0B305B] lg:text-base text-sm sm:block lg:hidden mt-3">
+                      {slider.motive}
+                    </p>
                   </div>
                 </div>
               </div>

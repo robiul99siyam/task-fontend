@@ -11,7 +11,7 @@ export default function DrapDownSolution({ scrolled }) {
     >
       {/* Dropdown Trigger */}
       <a
-        className={`px-2 py-2 cursor-pointer z-10 ${
+        className={`px-2 py-2 cursor-pointer z-10  text-white ${
           scrolled && "text-blue-500"
         }`}
       >

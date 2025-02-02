@@ -39,36 +39,40 @@ export default function Trusted() {
   }, []);
 
   return (
-    <div className="py-4 px-60">
+    <div className="lg:py-36 lg:px-60 py-10 px-2">
       <h1 className="text-[#1F80F0] tracking-widest font-bold text-center">
         TRUSTED BY THE BEST
       </h1>
 
-      <div className="flex justify-center items-center gap-36">
+      <div className="flex justify-center border-b items-center lg:gap-36 gap-5 flex-col lg:flex-row">
         {/* Years of Experience */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <p className="flex justify-center items-center font-bold text-8xl text-[#1573DF]">
+        <div className="flex flex-row lg:flex-col   justify-center items-center gap-10 lg:gap-5">
+          <p className="flex justify-center items-center font-bold text-7xl lg:text-8xl text-[#1573DF]">
             <FaGreaterThan className="text-7xl mt-2 font-extrabold text-[#1573DF]" />
             {years}
           </p>
-          <p className="text-lg text-[#0B305B]">Years of Experience</p>
+          <p className="text-lg text-[#0B305B] font-bold">
+            Years of Experience
+          </p>
         </div>
 
         {/* Financial Institutions */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <p className="flex justify-center items-center font-bold text-8xl text-[#1573DF]">
+        <div className="flex flex-row lg:flex-col   justify-center items-center gap-10 lg:gap-5">
+          <p className="flex justify-center items-center font-bold text-7xl lg:text-8xl text-[#1573DF]">
             {institutions}+
           </p>
-          <p className="text-lg text-[#0B305B]">Financial Institutions</p>
+          <p className="text-lg text-[#0B305B] font-bold">
+            Financial Institutions
+          </p>
         </div>
 
         {/* Customers Each */}
-        <div className="flex flex-col justify-center items-center gap-5">
-          <p className="flex justify-center items-center font-bold text-8xl text-[#1573DF]">
+        <div className="flex flex-row lg:flex-col justify-center items-center gap-10 lg:gap-5">
+          <p className="flex justify-center items-center font-bold text-6xl lg:text-8xl text-[#1573DF]">
             <FaGreaterThan className="text-7xl mt-2 font-extrabold text-[#1573DF]" />
             {customers}m
           </p>
-          <p className="text-lg text-[#0B305B]">Customers Each</p>
+          <p className="text-lg text-[#0B305B] font-bold">Customers Each</p>
         </div>
       </div>
     </div>
