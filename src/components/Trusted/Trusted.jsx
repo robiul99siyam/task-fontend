@@ -48,7 +48,7 @@ export default function Trusted() {
         {/* Years of Experience */}
         <div className="flex flex-col justify-center items-center gap-5">
           <p className="flex justify-center items-center font-bold text-8xl text-[#1573DF]">
-            <FaGreaterThan className="text-[8px] text-7xl mt-2 font-extrabold text-[#1573DF]" />
+            <FaGreaterThan className="text-7xl mt-2 font-extrabold text-[#1573DF]" />
             {years}
           </p>
           <p className="text-lg text-[#0B305B]">Years of Experience</p>
@@ -65,7 +65,7 @@ export default function Trusted() {
         {/* Customers Each */}
         <div className="flex flex-col justify-center items-center gap-5">
           <p className="flex justify-center items-center font-bold text-8xl text-[#1573DF]">
-            <FaGreaterThan className="text-[8px] text-7xl mt-2 font-extrabold text-[#1573DF]" />
+            <FaGreaterThan className="text-7xl mt-2 font-extrabold text-[#1573DF]" />
             {customers}m
           </p>
           <p className="text-lg text-[#0B305B]">Customers Each</p>

@@ -12,6 +12,9 @@ export default {
           "50%": { transform: "translateX(10px)" },
         },
       },
+      clipPath: {
+        custom: "polygon(0 1%, 100% 0, 100% 86%, 0% 100%);)",
+      },
     },
   },
   plugins: [],

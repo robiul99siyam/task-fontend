@@ -1,4 +1,19 @@
 import apdaptable from "../assets/logo/apdaptable.png";
+import bank1 from "../assets/logo/bank image/bank1.png";
+import bank10 from "../assets/logo/bank image/bank10.png";
+import bank11 from "../assets/logo/bank image/bank11.png";
+import bank12 from "../assets/logo/bank image/bank12.png";
+import bank13 from "../assets/logo/bank image/bank13.png";
+import bank14 from "../assets/logo/bank image/bank14.png";
+import bank15 from "../assets/logo/bank image/bank15.png";
+import bank2 from "../assets/logo/bank image/bank2.png";
+import bank3 from "../assets/logo/bank image/bank3.png";
+import bank4 from "../assets/logo/bank image/bank4.png";
+import bank5 from "../assets/logo/bank image/bank5.png";
+import bank6 from "../assets/logo/bank image/bank6.png";
+import bank7 from "../assets/logo/bank image/bank7.png";
+import bank8 from "../assets/logo/bank image/bank8.png";
+import bank9 from "../assets/logo/bank image/bank9.png";
 import cutting from "../assets/logo/cutting.svg";
 import focused from "../assets/logo/focused.png";
 import fullSuite from "../assets/logo/full_suite.svg";
@@ -79,4 +94,23 @@ const SliderContent = [
     images: safe,
   },
 ];
-export { languages, philosophy, SliderContent };
+
+const bankImageData = [
+  { id: 1, image: bank1 },
+  { id: 2, image: bank2 },
+  { id: 3, image: bank3 },
+  { id: 4, image: bank4 },
+  { id: 5, image: bank5 },
+  { id: 6, image: bank6 },
+  { id: 7, image: bank7 },
+  { id: 8, image: bank8 },
+  { id: 9, image: bank9 },
+  { id: 10, image: bank10 },
+  { id: 11, image: bank11 },
+  { id: 12, image: bank12 },
+  { id: 13, image: bank13 },
+  { id: 14, image: bank14 },
+  { id: 15, image: bank15 },
+];
+
+export { bankImageData, languages, philosophy, SliderContent };

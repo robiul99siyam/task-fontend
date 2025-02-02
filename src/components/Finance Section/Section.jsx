@@ -1,9 +1,9 @@
-import bg2 from "../../assets/backgrounds/WaveLinesDesktop2.svg";
+import bg4 from "../../assets/backgrounds/WaveLinesDesktop4.svg";
 import sectionImage from "../../assets/logo/sectionImage.jpg";
 import sectionImage1 from "../../assets/logo/sectionImage1.svg";
 import sectionImage2 from "../../assets/logo/sectionImage2.svg";
 import sectionImage3 from "../../assets/logo/sectionImage3.svg";
-export default function Section({ scrolled }) {
+export default function Section() {
   return (
     <div className="grid grid-cols-12 px-28 py-14">
       <div className="col-span-6">
@@ -43,12 +43,8 @@ export default function Section({ scrolled }) {
           />
 
           <img
-            src={bg2}
-            className={`${
-              scrolled
-                ? "hidden"
-                : "absolute w-[75%] h-[95%] m-auto ml-16 object-cover animate-sway"
-            } `}
+            src={bg4}
+            className="absolute w-[75%] h-[95%] m-auto ml-16 -mt-24 object-cover animate-swayY"
             alt=""
           />
         </div>

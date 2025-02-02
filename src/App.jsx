@@ -6,9 +6,12 @@ import bg3 from "./assets/backgrounds/WaveLinesDesktop3.svg";
 import bg4 from "./assets/backgrounds/WaveLinesDesktop4.svg";
 import Benner from "./components/Benner/Benner";
 import Section from "./components/Finance Section/Section";
+import Footer from "./components/footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import SectionPhilosophy from "./components/PHILOSOPHY/SectionPhilosophy";
 import Technology from "./components/PHILOSOPHY/Technology";
+import BankLogo from "./components/Trusted/BankLogo";
+import Legacy from "./components/Trusted/Legacy";
 import Trusted from "./components/Trusted/Trusted";
 
 export default function App() {
@@ -32,7 +35,10 @@ export default function App() {
 
   return (
     <>
-      <div className="relative w-full border-style h-[calc(110vh-80px)] bg-cover bg-center bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] overflow-hidden">
+      <div
+        style={{ clipPath: "polygon(0 1%, 100% 0, 100% 86%, 0% 100%)" }}
+        className="relative w-full border-style h-[calc(115vh-80px)] bg-cover bg-center bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] overflow-hidden"
+      >
         {/* Background Images with Continuous Sway Animation */}
         <div className="absolute inset-0 z-0">
           <img
@@ -48,7 +54,7 @@ export default function App() {
           <img
             src={bg5}
             alt="background"
-            className="absolute  top-0 left-0 w-full h-full object-cover animate-sway"
+            className="absolute  top-0 left-0 w-full h-full object-cover animate-swayY"
           />
           <img
             src={bg2}
@@ -73,6 +79,9 @@ export default function App() {
       <SectionPhilosophy />
       <Technology />
       <Trusted />
+      <BankLogo />
+      <Legacy />
+      <Footer />
     </>
   );
 }

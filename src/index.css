@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* border: 0px; */
+  margin: 0px;
+}
 @keyframes sway {
   0%,
   100% {
@@ -10,10 +14,21 @@
   }
   50% {
     transform: translateX(10px);
-    /* transform: translateY(15px); */
   }
 }
 
+@keyframes swayY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
 .animate-sway {
   animation: sway 2s ease-in-out infinite;
+}
+.animate-swayY {
+  animation: swayY 2s ease-in-out infinite;
 }
