@@ -13,7 +13,7 @@ export default function Legacy() {
         margin: "0px",
         boxSizing: "border-box",
       }}
-      className="relative w-full border-style h-[calc(75vh-80px)] lg:h-[calc(90vh-80px)] bg-cover bg-center bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] overflow-hidden"
+      className="relative w-full border-style h-[calc(75vh-80px)] md:h-[calc(40vh-40px)] lg:h-[calc(90vh-80px)] bg-cover bg-center bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
         <img
@@ -44,10 +44,10 @@ export default function Legacy() {
       </div>
 
       <div className="absolute inset-0 z-50 px-5 lg:px-20 mt-[200px]  flex flex-col items-start justify-center">
-        <h1 className=" text-2xl lg:text-6xl tracking-widest text-white font-bold  text-start">
+        <h1 className=" text-2xl lg:text-6xl md:text-5xl tracking-widest text-white font-bold  text-start">
           Legacy no longer
         </h1>
-        <p className="text-white font-semibold text-[14px] lg:text-lg  text-start lg:text-center py-5">
+        <p className="text-white font-semibold text-[16px] lg:text-lg  text-start lg:text-center py-5">
           Talk to us to find out how we can transform your organisation for the
           future Contact Us
         </p>
