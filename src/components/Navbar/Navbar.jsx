@@ -11,7 +11,7 @@ export default function Navbar({ scrolled }) {
 
   return (
     <nav
-      className={`px-6 md:px-5 transition-all duration-300 md:py-4 ${
+      className={`px-6 md:px-5 lg:px-20 transition-all duration-300 md:py-4 ${
         scrolled
           ? "bg-white shadow-lg fixed w-full z-50 text-gray-900 py-4 "
           : "bg-transparent py-4"

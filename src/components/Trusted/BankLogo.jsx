@@ -3,11 +3,11 @@ import { bankImageData } from "../../utails/data";
 
 export default function BankLogo() {
   return (
-    <div className="px-28">
+    <div className="px-20 lg:px-5">
       <div className="hidden lg:block ">
         <div className="flex  flex-wrap justify-center items-center">
           {bankImageData.map((bank) => (
-            <div key={bank.id} className="my-5 mx-5">
+            <div key={bank.id} className="my-5 mx-5 lg:mx-2 lg:my-2">
               <img
                 className="w-44"
                 src={bank.image}

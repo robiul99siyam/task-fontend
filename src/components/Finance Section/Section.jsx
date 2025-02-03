@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import bg4 from "../../assets/backgrounds/WaveLinesDesktop4.svg";
 import sectionImage from "../../assets/logo/sectionImage.jpg";
 import sectionImage1 from "../../assets/logo/sectionImage1.svg";
@@ -5,12 +6,17 @@ import sectionImage2 from "../../assets/logo/sectionImage2.svg";
 import sectionImage3 from "../../assets/logo/sectionImage3.svg";
 export default function Section() {
   return (
-    <div className="grid grid-cols-12 py-10 px-6 md:px-10 md:grid-cols-12 lg:px-28 lg:py-14 lg:grid-cols-12">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ duration: 0.8 }}
+      className="grid grid-cols-12 py-10 px-6 md:px-10 md:grid-cols-12 lg:px-20 lg:py-14 lg:grid-cols-12"
+    >
       <div className="col-span-12 md:col-span-6 lg:col-span-6">
         <h1 className="text-[#1F80F0] lg:tracking-widest sm:tracking-normal  font-bold lg:py-5 py-2">
           POWERING THE FUTURE OF FINANCE
         </h1>
-        <p className="text-[#0B305B] leading-none lg:leading-[70px] font-semibold text-[35px] lg:text-[65px]">
+        <p className="text-[#0B305B] leading-none lg:leading-[50px] font-semibold text-[35px] lg:text-[50px]">
           Uncovering new <br className="hidden lg:block" /> ways to delight{" "}
           <br className="hidden lg:block" /> customers
         </p>
@@ -31,7 +37,7 @@ export default function Section() {
         <div className="absolute inset-0 z-10 mt-20 lg:mt-0">
           <img
             src={sectionImage1}
-            className="absolute w-16 top:40 left-60 lg:top-10  lg:w-28 lg:left-96  object-cover animate-swayY"
+            className="absolute w-16 top:40 left-60 lg:top-10  lg:w-28 lg:left-80  object-cover animate-swayY"
             alt=""
           />
           <img
@@ -55,7 +61,7 @@ export default function Section() {
         <div className="relative z-0">
           <img
             src={sectionImage}
-            className="mt-10 lg:mt-1 md:w-[80%]   w-[65%] lg:w-[75%] lg:h-[65%] m-auto"
+            className="mt-10 lg:mt-1 md:w-[80%] shadow-2xl   w-[65%] lg:w-[65%] h-auto m-auto"
             alt=""
           />
         </div>
@@ -72,6 +78,6 @@ export default function Section() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

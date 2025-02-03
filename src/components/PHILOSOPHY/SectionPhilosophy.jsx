@@ -1,9 +1,15 @@
+import { motion } from "motion/react";
 import artifical from "../../assets/logo/artifical.png";
 import artificalSM from "../../assets/logo/atificalSM.png";
 import { philosophy } from "../../utails/data";
 export default function SectionPhilosophy() {
   return (
-    <div className="lg:py-36 lg:px-28 py-10 px-2">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ duration: 0.8 }}
+      className="lg:py-36 lg:px-20 py-10 px-2"
+    >
       <h1 className="text-[#1F80F0] lg:tracking-widest tracking-normal  font-bold text-center">
         OUR PHILOSOPHY
       </h1>
@@ -11,12 +17,22 @@ export default function SectionPhilosophy() {
         Human-centred innovation
       </h1>
 
-      <div className="w-full bg-white lg:py-24 py-16">
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.8 }}
+        className="w-full bg-white lg:py-24 py-16"
+      >
         <img className="hidden lg:block" src={artifical} alt="" />
         <img className="sm:block lg:hidden" src={artificalSM} alt="" />
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col justify-center md:flex-col items-center lg:flex-row gap-14 md:gap-5 px-[10px]">
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.8 }}
+        className="flex flex-col justify-center md:flex-col items-center lg:flex-row gap-14 md:gap-5 px-[10px]"
+      >
         {philosophy.map((philo) => (
           <div key={philo.id}>
             <img src={philo.image} alt="" />
@@ -31,7 +47,7 @@ export default function SectionPhilosophy() {
             </p>
           </div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

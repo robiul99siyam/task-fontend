@@ -39,7 +39,7 @@ export default function Trusted() {
   }, []);
 
   return (
-    <div className="lg:py-36 lg:px-60 py-10 px-2">
+    <div className="lg:py-10 lg:px-56 py-10 px-2">
       <h1 className="text-[#1F80F0] tracking-widest font-bold text-center">
         TRUSTED BY THE BEST
       </h1>

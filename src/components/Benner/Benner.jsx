@@ -1,8 +1,8 @@
 import bennerImage from "../../assets/logo/benner.png";
 export default function Benner() {
   return (
-    <div className="grid grid-cols-12 md:grid-cols-12 lg:grid-cols-12 items items-center justify-center ">
-      <div className="col-span-12 md:col-span-8 lg:col-span-8  px-6 md:px-5 lg:px-28 md:py-10 lg:py-10 text-white">
+    <div className="grid grid-cols-12 md:grid-cols-12 lg:grid-cols-12 items items-start justify-center ">
+      <div className="col-span-12 md:col-span-8 lg:col-span-8  px-6 md:px-5 lg:px-20 md:py-10 lg:py-1 text-white">
         <h1 className="text-[45px] mt-24 leading-1 md:text-[50px] lg:text-[80px] md:leading-[80px] lg:leading-[80px]  font-semibold">
           Embrace the <br className="hidden lg:block md:block" /> Future of
           Finance
@@ -17,7 +17,7 @@ export default function Benner() {
       </div>
 
       {/* Right Section */}
-      <div className="col-span-12 md:col-span-4 md:-ml-[350px] -ml-[100px]">
+      <div className="col-span-12 md:col-span-4 md:-ml-[350px] lg:mt-14 -ml-[100px]">
         <img
           src={bennerImage}
           className="md:max-w-[800px] max-w-[800px] h-[400px] md:h-[500px]"

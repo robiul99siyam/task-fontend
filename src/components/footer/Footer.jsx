@@ -51,7 +51,9 @@ export default function Footer() {
         >
           ©2025 All rights reserved.siyamrobiulislam@gmail.com
         </a>
-        <p className="text-blue-700 text-sm hidden text-end">Privacy Policy</p>
+        <p className="text-blue-700 text-sm hidden lg:block text-end">
+          Privacy Policy
+        </p>
       </div>
     </>
   );

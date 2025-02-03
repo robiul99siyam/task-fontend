@@ -29,7 +29,7 @@ export default function Slider() {
   return (
     <>
       <div className="hidden lg:block">
-        <div className="flex justify-center  items-center gap-36 py-8">
+        <div className="flex justify-center  items-center gap-36 lg:gap-10 py-8">
           {SliderContent.map((slider) => (
             <button
               className={`${
@@ -65,7 +65,7 @@ export default function Slider() {
                       <p className="text-[#1F80F0] mb-2 tracking-widest font-bold">
                         {slider.tags.toUpperCase()}
                       </p>
-                      <h2 className="text-[#0B305B] text-2xl   font-semibold lg:text-5xl ">
+                      <h2 className="text-[#0B305B] text-2xl   font-semibold lg:text-4xl ">
                         {slider.title}
                       </h2>
                       <p className="text-[#0B305B] hidden lg:block md:block md:text-sm tracking-normal font-semibold text-lg mt-3">

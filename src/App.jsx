@@ -35,9 +35,10 @@ export default function App() {
 
   return (
     <>
+      {/* md:h-[60vh] lg:h-[118vh] xl:h-[85vh] when i need then use this size */}
       <div
         style={{ clipPath: "polygon(0 0, 100% 0, 100% 83%, 0% 100%)" }}
-        className="relative w-full h-auto   md:h-[115vh] lg:h-[89vh] bg-cover bg-center bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] overflow-hidden"
+        className="relative w-full h-auto    bg-cover bg-center bg-radial bg-[radial-gradient(at_15%_75%,_#3c9dca,_#0054BF,_#4f46e5)] overflow-hidden"
       >
         {/* Background Images with Continuous Sway Animation */}
         <div className="absolute inset-0 z-0">
