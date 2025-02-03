@@ -5,7 +5,7 @@ export default function BankLogo() {
   return (
     <div className="px-20 lg:px-5">
       <div className="hidden lg:block ">
-        <div className="flex  flex-wrap justify-center items-center">
+        <div className="flex  flex-wrap justify-center items-center gap-2">
           {bankImageData.map((bank) => (
             <div key={bank.id} className="my-5 mx-5 lg:mx-5 lg:my-2">
               <img
